@@ -32,12 +32,13 @@ To Do List
 ✅ Add RLS user_id = uid() for all actions
 ## Create Page
 ✅ Add your form
-Write your create function in fetch-utils.js
-Add your submit event listener
-Grab data using new FormData and send to supabase
+✅ Write your create function in fetch-utils.js
+✅ Add your submit event listener
+✅ Grab data using new FormData and send to supabase
 Redirect to list page Validation Step: New rows are being added in supabase
 ## List Page: List all items
-Add a <ul> element
+✅ Add a <ul> element
+write render function in render function
 TDD our render function (need a way to differentiate between purchased and unpurchased items)
 Add our fetch function in fetch-utils.js
 Write a function called displayListItems() : grab all the data from supabase, use our render function to display

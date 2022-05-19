@@ -8,8 +8,8 @@ const error = document.getElementById('error');
 form.addEventListener('submit', async (e) => {
     e.preventDefault();
     const itemData = new FormData(form);
-    const data = await createListItem(itemData.get('item'), itemData.get('quantity'));
-    console.log(data);
+    const data = await createListItem(itemData.get('name'), itemData.get('quantity'));
+    //console.log(data);
     if (data) {
         window.location.href = '/list/index.html';
     } else {
