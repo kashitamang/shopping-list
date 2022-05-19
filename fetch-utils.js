@@ -42,7 +42,9 @@ export async function logout() {
 // }
 
 export async function createListItem(name, quantity) {
-    const response = await client.from('shopping_list').insert({ name, quantity });
+    const response = await client
+        .from('shopping_list')
+        .insert({ name, quantity });
     if (response.error) {
         console.error(response.error.message);
     } else {
@@ -51,7 +53,9 @@ export async function createListItem(name, quantity) {
 }
 
 export async function fetchListItems() {
-    const response = await client.from('shopping_list').select('*');
+    const response = await client
+        .from('shopping_list')
+        .select('*');
 
     if (response.error) {
         console.error(response.error.message);
@@ -66,6 +70,19 @@ export async function togglePurchased(item) {
         .from('shopping_list')
         .update({ purchased: !item.purchased })
         .match({ id: item.id });
+
+    if (response.error) {
+        console.error(response.error.message);
+    } else {
+        return response.data;
+    }
+}
+
+export async function deleteItems() {
+    const response = await client
+        .from('shopping_list')
+        .delete()
+        .match({ user_id: getUser().id });
 
     if (response.error) {
         console.error(response.error.message);

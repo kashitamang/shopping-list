@@ -40,12 +40,12 @@ Redirect to list page Validation Step: New rows are being added in supabase
 ✅ Add a <ul> element
 ✅write render function in render function
 ✅TDD our render function (need a way to differentiate between purchased and unpurchased items)
-Add our fetch function in fetch-utils.js
-Write a function called displayListItems() : grab all the data from supabase, use our render function to display
-On load, call displayListItems() Validation step: you can see rows on the page -- sign in as another user and ensure that you're only seeing authed user's data
+✅ Add our fetch function in fetch-utils.js
+✅ Write a function called displayListItems() : grab all the data from supabase, use our render function to display
+✅ On load, call displayListItems() Validation step: you can see rows on the page -- sign in as another user and ensure that you're only seeing authed user's data
 ## List Page: Delete Items
-Add a delete button
-Add delete all items function in fetch-utils.js
+✅ Add a delete button
+✅ Add delete all items function in fetch-utils.js
 Add event listener to call delete function and remove all items from the list
 ## List Page: Update Items
 Write a function in fetch-utils called updateItem
