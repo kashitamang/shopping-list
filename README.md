@@ -27,9 +27,9 @@ Additional considerations:
 
 To Do List
 ## Database Setup
-Make your table
-Add user_id foreign key relation (default to uid())
-Add RLS user_id = uid() for all actions
+✅ Make your table
+✅ Add user_id foreign key relation (default to uid())
+✅ Add RLS user_id = uid() for all actions
 ## Create Page
 Add your form
 Write your create function in fetch-utils.js
