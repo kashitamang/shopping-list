@@ -31,7 +31,7 @@ To Do List
 ✅ Add user_id foreign key relation (default to uid())
 ✅ Add RLS user_id = uid() for all actions
 ## Create Page
-Add your form
+ Add your form
 Write your create function in fetch-utils.js
 Add your submit event listener
 Grab data using new FormData and send to supabase
