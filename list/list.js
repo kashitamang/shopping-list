@@ -7,6 +7,7 @@ const logoutButton = document.getElementById('logout');
 const deleteButton = document.getElementById('delete-button');
 const shoppingListElem = document.getElementById('shopping-list');
 const error = document.getElementById('error');
+const backButton = document.getElementById('back-button');
 
 logoutButton.addEventListener('click', () => {
     logout();
@@ -36,6 +37,10 @@ displayListItems();
 
 deleteButton.addEventListener('click', () => {
     deleteItems();
+    displayListItems();
 });
 
-//console.log(deleteButton);
+// console.log(backButton);
+backButton.addEventListener('click', () => {
+    window.location.href = '../create/index.html';
+});

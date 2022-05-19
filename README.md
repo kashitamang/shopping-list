@@ -46,8 +46,6 @@ Redirect to list page Validation Step: New rows are being added in supabase
 ## List Page: Delete Items
 ✅ Add a delete button
 ✅ Add delete all items function in fetch-utils.js
-Add event listener to call delete function and remove all items from the list
+✅ Add event listener to call delete function and remove all items from the list
 ## List Page: Update Items
-Write a function in fetch-utils called updateItem
-Add a click event handler to our list items that updates individual items in supabase
-call displayListItems()
+✅ call displayListItems() within list 
