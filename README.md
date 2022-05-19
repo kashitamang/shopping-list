@@ -24,3 +24,29 @@ Additional considerations:
     -   What needs to live in a persistence layer?
 -   Is there some state we need to initialize?
 -   Ask: should any of this work be abstracted into functions? (i.e., is the work complicated? can it be resused?)
+
+To Do List
+## Database Setup
+Make your table
+Add user_id foreign key relation (default to uid())
+Add RLS user_id = uid() for all actions
+## Create Page
+Add your form
+Write your create function in fetch-utils.js
+Add your submit event listener
+Grab data using new FormData and send to supabase
+Redirect to list page Validation Step: New rows are being added in supabase
+## List Page: List all items
+Add a <ul> element
+TDD our render function (need a way to differentiate between purchased and unpurchased items)
+Add our fetch function in fetch-utils.js
+Write a function called displayListItems() : grab all the data from supabase, use our render function to display
+On load, call displayListItems() Validation step: you can see rows on the page -- sign in as another user and ensure that you're only seeing authed user's data
+## List Page: Delete Items
+Add a delete button
+Add delete all items function in fetch-utils.js
+Add event listener to call delete function and remove all items from the list
+## List Page: Update Items
+Write a function in fetch-utils called updateItem
+Add a click event handler to our list items that updates individual items in supabase
+call displayListItems()
