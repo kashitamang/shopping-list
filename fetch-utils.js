@@ -49,3 +49,27 @@ export async function createListItem(name, quantity) {
         return response.data;
     }
 }
+
+export async function fetchListItems() {
+    const response = await client.from('shopping_list').select('*');
+
+    if (response.error) {
+        console.error(response.error.message);
+    } else {
+        return response.data;
+    }
+}
+
+export async function togglePurchased(item) {
+    console.log(item);
+    const response = await client
+        .from('shopping_list')
+        .update({ purchased: !item.purchased })
+        .match({ id: item.id });
+
+    if (response.error) {
+        console.error(response.error.message);
+    } else {
+        return response.data;
+    }
+}

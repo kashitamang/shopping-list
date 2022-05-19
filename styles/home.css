@@ -1,1 +1,5 @@
 /* add home page styles here */
+.cross-off {
+    text-decoration: line-through;
+    opacity: 50%;
+}
