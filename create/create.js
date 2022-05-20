@@ -1,7 +1,9 @@
-import { createListItem } from '../fetch-utils.js';
+import { checkAuth, createListItem } from '../fetch-utils.js';
 
 const form = document.querySelector('.item-form');
 const error = document.getElementById('error');
+
+checkAuth();
 
 //console.log(error);
 

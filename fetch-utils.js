@@ -10,7 +10,7 @@ export function getUser() {
 export function checkAuth() {
     const user = getUser();
 
-    if (!user) location.replace('../');
+    if (!user) location.replace('/index.html');
 }
 
 export function redirectIfLoggedIn() {
