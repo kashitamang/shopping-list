@@ -36,8 +36,12 @@ async function displayListItems() {
 displayListItems();
 
 deleteButton.addEventListener('click', () => {
-    deleteItems();
-    displayListItems();
+    window.confirm('are you sure you want to delete your whole list?');
+    if (confirm) {
+        deleteItems();
+        displayListItems();
+    } else 
+        displayListItems();
 });
 
 // console.log(backButton);

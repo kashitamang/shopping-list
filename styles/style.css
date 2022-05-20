@@ -13,7 +13,7 @@ body {
     --color4: hsla(45, 73%, 98%, 1);
     --color5: hsla(224, 40%, 79%, 1); */
     
-    --header-height: 80px;
+    --header-height: 120px;
     --shadow: 0px 10px 20px -12px rgb(0, 0, 0);
     --gutter: 30px;
     --footer-height: 25px;
@@ -44,25 +44,12 @@ section {
     border: solid 2px var(--color1);
 }
 
-header {
-    display: flex;
-    justify-content: flex-end;
-    background-color: var(--color3);
-    height: var(--header-height);
-    box-shadow: var(--shadow);
-}
-
-
 .gutter-right {
     margin-right: 20px;
 }
 
 .main-logo {
     animation: pulse 5s infinite ease-in-out;
-}
-
-header img {
-    height: var(--header-height);
 }
 
 p {
@@ -80,7 +67,7 @@ footer {
     box-shadow: var(--shadow);
 }
 
-  
+
   @keyframes pulse {
     20% {
       transform: rotate3d(-10, -10, -10, 50deg) scale(1.2);
