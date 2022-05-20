@@ -1,4 +1,77 @@
 /* add home page styles here */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+* {
+    font-family: 'Roboto', sans-serif;
+    color: rgb(174, 180, 151);
+    background-color: rgb(22, 38, 46);
+    font-size: 1rem;
+    line-height: 27.6px;
+    text-shadow: none;
+    font-weight: 400;
+    letter-spacing: .075em;
+}
+
+input {
+    border: none;
+    border-bottom: 2px solid rgb(174, 180, 151);
+}
+
+#logout {
+    position: fixed;
+    right: 20px;
+    top: 90px;
+}
+
+.auth-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+}
+
+.auth-container {
+    margin: 10px;
+}
+
+.auth-container h3 {
+    font-size: 2rem;
+    font-weight: 1000;
+    text-align: center;
+    color: rgb(161, 214, 87);
+}
+
+.auth-container form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+}
+
+.auth-container button {
+    margin: 50px;
+}
+
+button {
+    font-size: 13px;
+    font-style: bold;
+    width:fit-content;
+    background-color: rgb(71, 89, 99);
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    box-shadow: white (255, 255, 255) 0px 5px 15px;
+    padding: 6px 18px 6px 18px;
+    border-radius: 7px;
+    border: none;
+    box-shadow: var(--shadow);
+    position: relative;
+}
+
+button:hover {
+    transition: ease-in-out;
+    box-shadow: none;
+    background-color: rgb(108, 122, 130);
+}
+
 .cross-off {
     text-decoration: line-through;
     opacity: 50%;
