@@ -2,6 +2,8 @@ import { checkAuth, createListItem } from '../fetch-utils.js';
 
 const form = document.querySelector('.item-form');
 const error = document.getElementById('error');
+const viewListButton = document.getElementById('view-list');
+
 
 checkAuth();
 
@@ -17,4 +19,8 @@ form.addEventListener('submit', async (e) => {
     } else {
         error.textContent = 'uh oh...somethings not right';
     }
+});
+
+viewListButton.addEventListener('click', () => {
+    window.location.href = '/list/index.html';
 });
