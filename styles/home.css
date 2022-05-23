@@ -1,1 +1,164 @@
 /* add home page styles here */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+* {
+    font-family: 'Roboto', sans-serif;
+    color: #aeb497;
+    background-color: #16262e;
+    font-size: 1rem;
+    line-height: 27.6px;
+    text-shadow: none;
+    font-weight: 400;
+    letter-spacing: .075em;
+}
+
+h3 {
+    font-size: 3rem;
+    color: rgb(161, 214, 87);
+}
+
+header {
+    height: 300px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-image: linear-gradient(
+    0deg,
+    hsl(200deg 35% 13%) 44%,
+    hsl(80deg 8% 47%) 101%,
+    hsl(72deg 16% 65%) 100%
+);
+}
+
+footer {
+    height: 100px;
+    width: 100%;
+}
+
+header #back-button {
+    padding: 10px 10px 10px 10px;
+    font-size: 3rem;
+    cursor: pointer;
+    background-image: linear-gradient(
+        0deg,
+        hsl(200deg 35% 13%) 44%,
+        hsl(80deg 8% 47%) 101%,
+        hsl(72deg 16% 65%) 100%
+    );
+}
+
+header #back-button:hover {
+    color: #16262e;
+}
+
+header #logout {
+    padding: 10px 10px 10px 10px;
+    font-size: 1.5rem;
+    font-weight: 1000;
+    cursor: pointer;
+    background-image: linear-gradient(
+        0deg,
+        hsl(200deg 35% 13%) 44%,
+        hsl(80deg 8% 47%) 101%,
+        hsl(72deg 16% 65%) 100%
+    );
+}
+
+header #logout:hover {
+    color: #16262e;
+}
+
+#view-list {
+    padding: 10px 10px 10px 10px;
+    font-size: 3rem;
+    font-weight: 1000;
+    cursor: pointer;
+    background-image: linear-gradient(
+        0deg,
+        hsl(200deg 35% 13%) 44%,
+        hsl(80deg 8% 47%) 101%,
+        hsl(72deg 16% 65%) 100%
+    );
+}
+
+#view-list:hover {
+    color: #16262e;
+}
+
+input {
+    border: none;
+    border-bottom: 2px solid rgb(174, 180, 151);
+}
+
+.auth-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+}
+
+.auth-container {
+    margin: 10px;
+}
+
+.auth-container h3 {
+    font-size: 2rem;
+    font-weight: 1000;
+    text-align: center;
+    color: rgb(161, 214, 87);
+}
+
+.auth-container form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 10px;
+}
+
+.auth-container button {
+    margin: 50px;
+}
+
+button {
+    font-size: 13px;
+    font-style: bold;
+    width:fit-content;
+    background-color: rgb(71, 89, 99);
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    box-shadow: white (255, 255, 255) 0px 5px 15px;
+    padding: 6px 18px 6px 18px;
+    border-radius: 7px;
+    border: none;
+    box-shadow: var(--shadow);
+    position: relative;
+}
+
+button:hover {
+    transition: ease-in-out;
+    box-shadow: none;
+    background-color: rgb(108, 122, 130);
+}
+
+.cross-off {
+    text-decoration: line-through;
+    opacity: 50%;
+}
+
+.material-symbols-rounded {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 600,
+    'GRAD' 0,
+    'opsz' 48
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form button {
+    margin-top: 40px;
+}

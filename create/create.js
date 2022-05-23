@@ -1,0 +1,26 @@
+import { checkAuth, createListItem } from '../fetch-utils.js';
+
+const form = document.querySelector('.item-form');
+const error = document.getElementById('error');
+const viewListButton = document.getElementById('view-list');
+
+
+checkAuth();
+
+//console.log(error);
+
+form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const itemData = new FormData(form);
+    const data = await createListItem(itemData.get('name'), itemData.get('quantity'));
+    //console.log(data);
+    if (data) {
+        window.location.href = '/list/index.html';
+    } else {
+        error.textContent = 'uh oh...somethings not right';
+    }
+});
+
+viewListButton.addEventListener('click', () => {
+    window.location.href = '/list/index.html';
+});
